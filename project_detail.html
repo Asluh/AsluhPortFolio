@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 Details</title>
+    <link rel="stylesheet" href="project_detail_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Matemasie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="project-details-section">
+        <div id="project-details" class="project-details">
+            <a href="index.html#project" class="close-btn"><i class="fa-solid fa-xmark" style="color: #ffffff;"></i></a>
+            <h2 id="project-title">Project Title</h2>
+            <h4>Description:</h4>
+            <p id="project-description"> Project description will appear here.</p>
+            <h4>Technologies Used:</h4>
+            <p id="project-technologies"> Technologies will be listed here.</p>
+        </div>
+    </div>
+    <script>
+        // Function to get query parameters from the URL
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        // Project data (could be fetched from a server)
+        const projects = {
+            "1": {
+                "title": "HealthiFY",
+                "description": "Healthify is a comprehensive health and wellness application designed to support users in maintaining a healthier lifestyle. It offers features like BMR and BMI calculations, personalized diet and exercise plans, food and calorie tracking, sleep monitoring, and progress visualization through charts and graphs. The app provides tailored recommendations to help users achieve their fitness and wellness goals.",
+                "technologies": "Python, Django, JavaScript, html, css, Bootstrap"
+            },
+            "2": {
+                "title": "FocusPad",
+                "description": "CineStream is a robust movie details platform designed to provide comprehensive information about films. Users of CineStream benefit from real-time updates and access to detailed film information, including essential details such as the director, language, and runtime of each movie. This feature provides a rich and informative viewing experience, allowing users to quickly find and explore movies of interest.",
+                "technologies": "Python, Django REST Framework, React, HTML5, CSS3, Bootstrap, SQLite3, GitHub"
+                },
+            "3": {
+                "title": "MotoFix",
+                "description": "MotoFix is a robust auto service management application crafted to improve the operational efficiency of auto service centers. This application empowers administrators to handle a wide range of tasks with ease, including managing detailed customer profiles and maintaining comprehensive service records,administrators gain access to a centralized platform where they can oversee customer interactions and service histories efficiently.",
+                "technologies": "Python, Django REST Framework, React, HTML5, CSS3, Bootstrap, SQLite3, GitHub"
+            },
+            "4": {
+                "title": "MoneyMap",
+                "description": "MoneyMap is a user-friendly application designed to help individuals track and manage their finances. It offers a comprehensive overview of spending, allowing users to categorize their expenses into multiple categories. The tool provides interactive and up-to-date reports to help users understand their financial habits and make informed budgeting decisions.",
+                "technologies": "Python, Django REST Framework, React, HTML5, CSS3, Bootstrap, SQLite3, GitHub"
+            },
+            "5": {
+                "title": "SelectStore",
+                "description": "SelectStore is a sophisticated e-commerce platform designed to offer a seamless shopping experience. The site features a diverse selection of vendors and an extensive array of products, catering to a broad range of consumer needs.Users are provided with a comprehensive shopping interface that showcases various options across multiple categories.",
+                "technologies": "Python, HTML5, CSS3, Bootstrap, SQLite3"
+            },
+            "6": {
+                "title": "FocusPad",
+                "description": "FocusPad is a dynamic daily task manager application designed to streamline to-do list management. The project incorporates a Django REST API that facilitates efficient interaction with the task management system, providing a flexible and robust interface for integration with the front end.The application supports secure authentication, ensuring that users data and tasks are protected. It allows users to manage their tasks effectively, offering real-time updates that reflect changes and progress continuously. ",
+                "technologies": "Python, Django REST Framework, React, HTML5, CSS3, Bootstrap, SQLite3, GitHub"
+            }
+           
+        };
+
+        // Get the project ID from the URL
+        const projectId = getQueryParam('id');
+
+        // Update the HTML content based on the project ID
+        if (projectId && projects[projectId]) {
+            document.getElementById('project-title').innerText = projects[projectId].title;
+            document.getElementById('project-description').innerText = `${projects[projectId].description}`;
+            document.getElementById('project-technologies').innerText = `${projects[projectId].technologies}`;
+        } else {
+            // If no project ID is found or is invalid, show a default message
+            document.getElementById('project-details').innerHTML = "<p>Project details not found.</p>";
+        }
+    </script>
+</body>
+</html>
