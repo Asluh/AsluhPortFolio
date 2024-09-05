@@ -302,6 +302,61 @@ body{
     font-weight: 400;
     font-style: normal;
 }
+
+/* Experience Section Styling */
+.experience-section {
+    margin-top: 30px;
+    width: 85%;
+    max-width: 1200px;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.experience-content strong{
+    font-size: 1em;
+    color: #e91e63;
+}
+
+.experience-content h2 {
+    
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.experience-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: "Archivo Black", sans-serif;
+    
+}
+
+.experience-item p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #555;
+    font-family: "Archivo Black", sans-serif;
+}
+
+
 /* Education Section Styling */
 .education-section {
     margin-top: 30px;
@@ -312,13 +367,16 @@ body{
     background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .education-section h2 {
-    font-size: 2.5em;
+    font-size: 2em;
     margin-bottom: 30px;
     color: #333;
-    font-family: "Arial", sans-serif;
+    font-family: "Archivo Black", sans-serif;
+   
+    font-style: normal;
 }
 
 /* Individual Education Card */
@@ -332,23 +390,24 @@ body{
 }
 
 .education-card h3 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #555;
     margin-bottom: 10px;
-    font-family: "Arial", sans-serif;
+    font-family: "Archivo Black", sans-serif;
+    
 }
 
 .education-card .institute {
-    font-size: 1.2em;
+    font-size: .9em;
     color: #e91e63;
     margin-bottom: 10px;
-    font-family: "Arial", sans-serif;
+    font-family: "Archivo Black", sans-serif;
 }
 
 .education-card .year {
-    font-size: 1.1em;
+    font-size: 1em;
     color: #777;
-    font-family: "Arial", sans-serif;
+    font-family: "Archivo Black", sans-serif;
 }
 
 /* Contact Section Styling */
@@ -371,7 +430,6 @@ body{
     margin-bottom: 30px;
     color: #333;
     font-family: "Archivo Black", sans-serif;
-    /* font-weight: 400; */
 }
 
 /* Contact Container */
@@ -381,8 +439,6 @@ body{
     align-items: center;
     background-color: #ffffff;
     padding: 20px;
-    /* border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 /* Left Side (Image and Button) */
@@ -410,6 +466,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-family: "Archivo Black", sans-serif;
 }
 
 .map-view-btn:hover {
@@ -429,7 +486,7 @@ body{
 .form-section label {
     display: block;
     margin-bottom: 10px;
-    font-family: "Arial", sans-serif;
+    font-family: "Archivo Black", sans-serif;
     color: #333;
 }
 
@@ -443,18 +500,98 @@ body{
 
 .submit-btn {
     width: 25%;
-    padding: 12px;
+    padding: 12px 0;
     background-color: #e91e63;
     color:white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    font-family: "Archivo Black", sans-serif;
+    
 }
 
 .submit-btn:hover {
     background-color: #d81b60;
     color: #fff;
+}
+/* Footer Section Styling */
+.footer-section {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+}
+
+.footer-left h3, .footer-center h3, .footer-right h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-family: "Archivo Black", sans-serif;
+
+}
+
+.footer-left p, .footer-center ul, .footer-right .social-media p {
+    font-size: .8em;
+    margin-bottom: 10px;
+    font-family: "Archivo Black", sans-serif;
+}
+
+.footer-center ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-center ul li {
+    margin-bottom: 10px;
+}
+
+.footer-center ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-right .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-right .social-media a i {
+    margin-top: 30px;
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+}
+
+.footer-right .social-media a:hover img {
+    opacity: 0.7;
+}
+
+/* Footer Bottom Styling */
+.footer-bottom {
+    background-color: #f5f5f5;
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    font-size: 0.7em;
+    color: #333;
+    font-family: "Archivo Black", sans-serif;
 }
 
 
@@ -537,6 +674,13 @@ body{
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    .experience-content {
+        padding: 0 10px;
+    }
+
+    .experience-item {
+        padding: 10px;
+    }
     .education-card {
         padding: 15px;
     }
@@ -560,7 +704,15 @@ body{
         margin-right: 0;
         margin-bottom: 20px;
     }
-    
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
 }
 
 
