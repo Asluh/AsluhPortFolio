@@ -21,7 +21,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 95%;
     max-width: 1200px;
     background-color: #ffffff;
     padding: 10px 20px;
@@ -82,9 +82,10 @@ body{
 /* Profile Section Styling */
 .profile-section {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-top: 30px;
-    width: 90%;
+    width: 85%;
     max-width: 1200px;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -93,8 +94,8 @@ body{
 
 .profile-picture img {
     margin: 20px;
-    width: 200px; /* Adjust as needed */
-    height: 200px; 
+    width: 300px; /* Adjust as needed */
+    height: 300px; 
     border-radius: 30px;
     object-fit: fill;
 }
@@ -144,7 +145,7 @@ body{
 /* About Me Section Styling */
 .about-me-section {
     margin-top: 30px;
-    width: 90%;
+    width: 85%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -177,7 +178,7 @@ body{
 /* Skills Section Styling */
 .skills-section {
     margin-top: 30px;
-    width: 90%;
+    width: 85%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -229,7 +230,7 @@ body{
 /* Projects Section Styling */
 .projects-section {
     margin-top: 30px;
-    width: 90%;
+    width: 85%;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -284,16 +285,7 @@ body{
 }
 
 .project-card h3 {
-    font-size: 1.2em;
-    color: #333;
-    text-align: center;
-    padding: 10px 0;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.project-card h4 {
-    font-size: 1em;
+    font-size: 1.8em;
     color:  #e91e63;
     text-align: center;
     padding: 10px 0;
@@ -301,68 +293,166 @@ body{
     font-weight: 400;
     font-style: normal;
 }
-
-/* Contact Form Container */
-.contact-form-container {
+.project-card h4 {
+    /* font-size: 1em; */
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* Education Section Styling */
+.education-section {
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    background-color: #ffffff;
+    width: 85%;
+    max-width: 1200px;
     padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Form Styling */
-.contact-form {
-    background-color: #fafafa;
-    padding: 20px;
-    border-radius: 8px;
-    max-width: 400px;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.education-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
     font-family: "Arial", sans-serif;
 }
 
-.contact-form h2 {
-    text-align: center;
+/* Individual Education Card */
+.education-card {
+    background-color: #fff;
+    padding: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.education-card h3 {
+    font-size: 1.8em;
+    color: #555;
+    margin-bottom: 10px;
+    font-family: "Arial", sans-serif;
+}
+
+.education-card .institute {
+    font-size: 1.2em;
+    color: #e91e63;
+    margin-bottom: 10px;
+    font-family: "Arial", sans-serif;
+}
+
+.education-card .year {
+    font-size: 1.1em;
+    color: #777;
+    font-family: "Arial", sans-serif;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    margin-top: 30px;
+    width: 85%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
     color: #333;
     font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
+    /* font-weight: 400; */
 }
 
-.contact-form label {
-    margin-bottom: 10px;
-    font-size: 1em;
-    color: #555;
-    display: block;
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    /* border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
-.contact-form input {
+/* Left Side (Image and Button) */
+.image-section {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.image-section img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.image-section img:hover{
+    transform: scale(1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+}
+.map-view-btn {
+    padding: 10px 20px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.map-view-btn:hover {
+    background-color: #d81b60;
+}
+
+/* Right Side (Form) */
+.form-section {
+    flex: 1;
     width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Arial", sans-serif;
+    color: #333;
+}
+
+.form-section input {
+    width: 80%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-.contact-form .submit-btn {
-    width: 30%;
-    padding: 10px;
-    background-color: #fff;
-    color: #333;
+.submit-btn {
+    width: 25%;
+    padding: 12px;
+    background-color: #e91e63;
+    color:white;
     border: none;
-    border-radius: 12px;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1em;
-    position: relative;
-    left: 36%;
+    font-size: 16px;
 }
 
-.contact-form .submit-btn:hover {
+.submit-btn:hover {
     background-color: #d81b60;
     color: #fff;
 }
@@ -418,7 +508,7 @@ body{
         margin-top: 20px;
     }
     .about-me-section {
-        width: 70%;
+        width: 85%;
     }
 
     .about-me-section h2 {
@@ -429,7 +519,7 @@ body{
         font-size: 1em;
     }
     .skills-section {
-        width: 70%;
+        width: 90%;
     }
 
     .skills-container {
@@ -447,24 +537,38 @@ body{
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    .contact-form {
+    .education-card {
         padding: 15px;
     }
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+
+    .education-card h3 {
+        font-size: 1.5em;
     }
 
-    .footer-section {
+    .education-card .institute {
+        font-size: 1em;
+    }
+
+    .education-card .year {
+        font-size: 0.9em;
+    }
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .image-section {
+        margin-right: 0;
         margin-bottom: 20px;
     }
+    
 }
 
 
 @media (max-width: 480px) {
+
+   
     .about-me-section {
-        width: 70%;
+        width: 90%;
         padding: 15px;
     }
 
@@ -497,9 +601,6 @@ body{
 
     .project-card h3 {
         font-size: 1em;
-    }
-    .contact-form {
-        padding: 10px;
     }
 
 }
