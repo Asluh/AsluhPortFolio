@@ -57,7 +57,7 @@ body{
 }
 
 .nav-links a {
-    color: #000000;
+    color: #333;
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s ease;
@@ -112,7 +112,7 @@ body{
 
 .profile-info h1 {
     font-family: "Archivo Black", sans-serif;
-    
+    color: #333;
     font-size: 2em;
     margin-bottom: 10px;
 }
@@ -154,7 +154,7 @@ body{
 .about-me-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #000000;
+    color: #333;
     text-align: center;
     font-family: "Archivo Black", sans-serif;
     font-weight: 300;
@@ -184,7 +184,7 @@ body{
 .skills-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #000000;
+    color: #333;
     text-align: center;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
@@ -234,7 +234,7 @@ body{
 .projects-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #000000;
+    color: #333;
     text-align: center;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
@@ -285,7 +285,7 @@ body{
 }
 .project-card h4 {
     font-size: 1em;
-    color: #333;
+    color: #666;
     text-align: center;
     padding: 10px 0;
     font-family: "Archivo Black", sans-serif;
@@ -326,7 +326,7 @@ body{
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #000000;
+    color: #333;
 }
 
 .experience-item {
@@ -369,7 +369,7 @@ body{
 .education-section h2 {
     font-size: 2em;
     margin-bottom: 30px;
-    color: #000000;
+    color: #333;
     font-family: "Archivo Black", sans-serif;
    
     font-style: normal;
