@@ -26,7 +26,7 @@ body{
     max-width: 1200px;
     background-color: #ffffff;
     padding: 10px 20px;
-    border-radius: 25px;
+    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     color: #000000;
     font-family: "Archivo Black", sans-serif;
@@ -89,16 +89,17 @@ body{
     width: 85%;
     max-width: 1200px;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
 }
 
 .profile-picture img {
     margin: 20px;
-    width: 300px; /* Adjust as needed */
+    width: 300px; 
     height: 300px; 
-    border-radius: 30px;
+    border-radius: 25px;
     object-fit: fill;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .profile-info {
@@ -124,12 +125,6 @@ body{
     color: #e91e63;
 }
 
-.profile-info p {
-    font-family: "Archivo Black", sans-serif;
-    
-    /* font-size: 1em; */
-    margin-bottom: 20px;
-}
 .social-icons{
     margin-top: 30px;
 }
@@ -153,27 +148,24 @@ body{
     padding: 20px;
     background-color: #ffffff;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .about-me-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333;
+    color: #000000;
     text-align: center;
     font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 
 .about-me-section p {
-    font-size: 1em;
-    line-height: 1.6;
+    
     color: #666;
     text-align: justify;
-    font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* Skills Section Styling */
@@ -186,13 +178,13 @@ body{
     padding: 20px;
     background-color: #ffffff;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .skills-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333;
+    color: #000000;
     text-align: center;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
@@ -222,11 +214,9 @@ body{
 
 .skill-icon p {
     font-size: 1em;
-    color: #666;
+    color: #333;
     text-align: center;
     font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 /* Projects Section Styling */
 .projects-section {
@@ -238,13 +228,13 @@ body{
     padding: 20px;
     background-color: #ffffff;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .projects-section h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #333;
+    color: #000000;
     text-align: center;
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
@@ -253,7 +243,8 @@ body{
 .projects-section p{
     margin-top: 10px;
     text-align: center;
-    color: #d6d5d5;
+    color: #f1f1f1;
+    font-size: xx-small;
 }
 
 /* Projects Grid */
@@ -286,22 +277,18 @@ body{
 }
 
 .project-card h3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     color:  #e91e63;
     text-align: center;
     padding: 10px 0;
     font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 .project-card h4 {
-    /* font-size: 1em; */
+    font-size: 1em;
     color: #333;
     text-align: center;
     padding: 10px 0;
     font-family: "Archivo Black", sans-serif;
-    font-weight: 400;
-    font-style: normal;
 }
 
 /* Experience Section Styling */
@@ -312,7 +299,7 @@ body{
     padding: 20px 0;
     background-color: #ffffff;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .experience-content {
@@ -321,8 +308,14 @@ body{
     padding: 0 20px;
 }
 .experience-content strong{
-    font-size: 1em;
+    font-size: 1.1em;
     color: #e91e63;
+    font-family: "Archivo Black", sans-serif;
+}
+.experience-content h4{
+    font-size: 1.1em;
+    color: #666;
+    font-family: "Archivo Black", sans-serif;
 }
 
 .experience-content h2 {
@@ -333,6 +326,7 @@ body{
     font-family: "Archivo Black", sans-serif;
     font-weight: 400;
     font-style: normal;
+    color: #000000;
 }
 
 .experience-item {
@@ -344,17 +338,18 @@ body{
 }
 
 .experience-item h3 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin-bottom: 10px;
     font-family: "Archivo Black", sans-serif;
+    color: #666;
     
 }
 
 .experience-item p {
-    font-size: 1em;
     margin-bottom: 10px;
     color: #555;
-    font-family: "Archivo Black", sans-serif;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -367,14 +362,14 @@ body{
     text-align: center;
     background-color: #ffffff;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     
 }
 
 .education-section h2 {
     font-size: 2em;
     margin-bottom: 30px;
-    color: #333;
+    color: #000000;
     font-family: "Archivo Black", sans-serif;
    
     font-style: normal;
@@ -391,8 +386,8 @@ body{
 }
 
 .education-card h3 {
-    font-size: 1.5em;
-    color: #555;
+    font-size: 1.4em;
+    color: #666;
     margin-bottom: 10px;
     font-family: "Archivo Black", sans-serif;
     
@@ -422,7 +417,7 @@ body{
     text-align: center;
     background-color: #ffffff;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     
 }
 
@@ -447,19 +442,22 @@ body{
     flex: 1;
     margin-right: 20px;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image-section img {
-    width: 80%;
+    width: 100%;
+    margin-bottom: 5px;
     border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 .image-section img:hover{
     transform: scale(1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, .4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
 }
 .map-view-btn {
+    margin-bottom: 10px;
     padding: 10px 20px;
     background-color: #e91e63;
     color: white;
@@ -488,7 +486,8 @@ body{
     display: block;
     margin-bottom: 10px;
     font-family: "Archivo Black", sans-serif;
-    color: #333;
+    color: #666;
+    align-items: center;
 }
 
 .form-section input {
@@ -497,6 +496,8 @@ body{
     margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    font-family: "Archivo Black", sans-serif;
+    color: #666;
 }
 
 .submit-btn {
@@ -523,6 +524,7 @@ body{
     padding: 20px 0;
     text-align: center;
     width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .footer-content {
@@ -543,6 +545,7 @@ body{
     font-size: 1.5em;
     margin-bottom: 15px;
     font-family: "Archivo Black", sans-serif;
+    color: #333;
 
 }
 
@@ -550,6 +553,7 @@ body{
     font-size: .8em;
     margin-bottom: 10px;
     font-family: "Archivo Black", sans-serif;
+    color: #666;
 }
 
 .footer-center ul {
@@ -563,7 +567,7 @@ body{
 
 .footer-center ul li a {
     text-decoration: none;
-    color: #333;
+    color: #666;
 }
 
 .footer-right .social-media {
@@ -591,7 +595,7 @@ body{
 
 .footer-bottom p {
     font-size: 0.7em;
-    color: #333;
+    color: #666;
     font-family: "Archivo Black", sans-serif;
 }
 
@@ -756,8 +760,7 @@ body{
         font-size: 1em;
     }
     .image-section img{
-        width: 200px;
-        height: 200px;
+        width: 100%;
     }
 
 }
