@@ -16,6 +16,7 @@ body{
     margin-top: 20px;
 }
 
+
 /* Navbar Styling */
 .navbar {
     display: flex;
@@ -656,7 +657,7 @@ body{
         font-size: 1em;
     }
     .skills-section {
-        width: 90%;
+        width: 85%;
     }
 
     .skills-container {
@@ -720,7 +721,7 @@ body{
 
    
     .about-me-section {
-        width: 90%;
+        width: 85%;
         padding: 15px;
     }
 
