@@ -218,6 +218,12 @@ body{
     text-align: center;
     font-family: "Archivo Black", sans-serif;
 }
+.slide {
+    margin-top: 10px;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: x-small;
+}
 /* Projects Section Styling */
 .projects-section {
     margin-top: 30px;
