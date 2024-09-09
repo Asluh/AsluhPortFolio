@@ -736,7 +736,7 @@ body{
     }
 
     .about-me-section h2 {
-        font-size: 1.6em;
+        font-size: 2em;
     }
 
     .about-me-section p {
@@ -763,7 +763,7 @@ body{
     }
 
     .project-card h3 {
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .image-section img{
         width: 100%;
