@@ -96,7 +96,7 @@ body{
 .profile-picture img {
     margin: 20px;
     width: 300px; 
-    height: 300px; 
+    height: 310px; 
     border-radius: 25px;
     object-fit: fill;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
